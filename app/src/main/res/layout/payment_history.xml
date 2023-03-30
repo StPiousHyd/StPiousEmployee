@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableRow
+            android:id="@+id/tbHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C5CAE9"
+            android:padding="@dimen/_10sdp">
+
+            <stpious.employee.utills.customFonts.Text_Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:background="@drawable/table_header_cell_bg"
+                android:gravity="start"
+                android:text="Receipt#"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <stpious.employee.utills.customFonts.Text_Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:background="@drawable/table_header_cell_bg"
+                android:gravity="start"
+
+                android:text="Paid"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <stpious.employee.utills.customFonts.Text_Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:background="@drawable/table_header_cell_bg"
+                android:gravity="start"
+
+                android:text="Mode"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <stpious.employee.utills.customFonts.Text_Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:background="@drawable/table_header_cell_bg"
+                android:gravity="start"
+                android:text="Date"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tbPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C5CAE9"
+            android:padding="@dimen/_10sdp"
+            android:visibility="gone">
+
+            <stpious.employee.utills.customFonts.Text_Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:background="@drawable/table_header_cell_bg"
+                android:gravity="center"
+                android:text="Year"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <stpious.employee.utills.customFonts.Text_Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:background="@drawable/table_header_cell_bg"
+                android:gravity="center"
+                android:text="Semester"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <stpious.employee.utills.customFonts.Text_Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:background="@drawable/table_header_cell_bg"
+                android:gravity="center"
+
+                android:text="Total"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <stpious.employee.utills.customFonts.Text_Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:background="@drawable/table_header_cell_bg"
+                android:gravity="center"
+
+                android:text="Paid"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp" />
+
+            <stpious.employee.utills.customFonts.Text_Medium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:background="@drawable/table_header_cell_bg"
+                android:gravity="center"
+
+                android:text="Due"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+</LinearLayout>

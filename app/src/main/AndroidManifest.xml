@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="stpious.student.app.App"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name="stpious.student.ui.SplashScreen"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="stpious.student.ui.HomeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="stpious.student.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="stpious.student.ui.WebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="stpious.student.ui.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="stpious.student.ui.GalleryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="stpious.student.ui.AttendenceActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="stpious.student.ui.NoticesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="stpious.student.ui.SyllabusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="stpious.student.ui.TimeTableActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="stpious.student.ui.EventsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="stpious.student.ui.ExamCellActivity"
+            android:screenOrientation="portrait" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="stpious.student.login.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <stpious.employee.utills.customFonts.Text_Normal
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="LOGIN"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <stpious.employee.utills.customFonts.EditeText_font
+            android:id="@+id/etUsername"
+            android:layout_width="910px"
+            android:layout_height="72dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_txt_username"
+            android:fontFamily="@font/poppins_semibold"
+            android:hint="Hallticket"
+            android:inputType="number"
+            android:layout_gravity="center"
+            android:lines="1"
+            android:paddingLeft="60dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/laypass"
+            android:layout_width="910px"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/etUsername"
+            app:layout_constraintStart_toStartOf="@+id/etUsername"
+            app:layout_constraintTop_toBottomOf="@+id/etUsername">
+
+            <stpious.employee.utills.customFonts.EditeText_font
+                android:id="@+id/etPassword"
+                android:layout_width="910px"
+                android:layout_height="72dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_txt_password"
+                android:fontFamily="@font/poppins_semibold"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:paddingLeft="60dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+            <ImageView
+                android:id="@+id/show_pass_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:alpha=".5"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:src="@drawable/ic_show"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/laypass"
+                app:layout_constraintTop_toTopOf="@+id/etPassword" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <stpious.employee.utills.customFonts.Button_Bold
+            android:id="@+id/btLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:background="@color/colorPrimary"
+            android:onClick="onClick"
+            android:text="LOGIN"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/laypass"
+            app:layout_constraintTop_toTopOf="@+id/laypass" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <stpious.employee.utills.customFonts.Text_Normal
+        android:id="@+id/txtRank"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="@drawable/table_content_cell_bg"
+        android:text=""
+        android:lines="1"
+        android:textSize="@dimen/_14sdp" />
+
+    <stpious.employee.utills.customFonts.Text_Normal
+        android:id="@+id/txtMovieName"
+        android:layout_width="@dimen/_150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@drawable/table_content_cell_bg"
+        android:text=""
+        android:lines="1"
+        android:textSize="@dimen/_14sdp" />
+
+    <stpious.employee.utills.customFonts.Text_Normal
+        android:id="@+id/txtYear"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="@drawable/table_content_cell_bg"
+        android:text=""
+        android:lines="1"
+        android:textSize="@dimen/_14sdp" />
+
+    <stpious.employee.utills.customFonts.Text_Normal
+        android:id="@+id/txtCost"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="match_parent"
+        android:background="@drawable/table_content_cell_bg"
+        android:text=""
+        android:lines="1"
+        android:textAlignment="center"
+        android:textSize="@dimen/_14sdp" />
+
+</LinearLayout>

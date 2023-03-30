@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/ivProfilepic"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_avatar" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <stpious.employee.utills.customFonts.Text_Medium
+                            android:id="@+id/tvName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="start"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <stpious.employee.utills.customFonts.Text_Normal
+                            android:id="@+id/tvSemester"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="start"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <stpious.employee.utills.customFonts.Text_Normal
+                            android:id="@+id/tvPrograme"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="start"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <stpious.employee.utills.customFonts.Text_Normal
+                            android:id="@+id/tvGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="start"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <stpious.employee.utills.customFonts.Text_Normal
+                            android:id="@+id/tvAcademic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="start"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <stpious.employee.utills.customFonts.Text_Normal
+                            android:id="@+id/tvPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="8dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="start"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/ivAttendence"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_110sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/attendance"
+                            android:onClick="onClick" />
+
+                        <ImageView
+                            android:id="@+id/ivFeePay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_110sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/fee"
+                            android:onClick="onClick" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/ivExam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_110sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/examcell"
+                            android:onClick="onClick" />
+
+                        <ImageView
+                            android:id="@+id/ivLearning"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_110sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/learning"
+                            android:onClick="onClick" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/ivNotice"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:onClick="onClick"
+                            android:src="@drawable/circulars" />
+
+                        <ImageView
+                            android:id="@+id/ivTimetable"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:onClick="onClick"
+                            android:src="@drawable/timetable" />
+
+                        <ImageView
+                            android:id="@+id/ivSyllabus"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:onClick="onClick"
+                            android:src="@drawable/syllabus" />
+
+                        <ImageView
+                            android:id="@+id/ivCollageWeb"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:onClick="onClick"
+                            android:src="@drawable/website" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/ivEvents"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:onClick="onClick"
+                            android:src="@drawable/events" />
+
+                        <ImageView
+                            android:id="@+id/ivGallery"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_marginStart="@dimen/_30sdp"
+                            android:layout_marginEnd="@dimen/_30sdp"
+                            android:onClick="onClick"
+                            android:src="@drawable/gallery" />
+
+                        <ImageView
+                            android:id="@+id/ivFeedback"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:onClick="onClick"
+                            android:src="@drawable/feedback" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <stpious.employee.utills.customFonts.Button_Normal
+                android:id="@+id/btRecentNotity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/orange_rounded_corner"
+                android:onClick="onClick"
+                android:text="@string/recent_notify"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_60sdp"
+                android:textSize="@dimen/_16sdp" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
